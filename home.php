@@ -27,5 +27,17 @@ if(isset($_GET['logout'])){
         </div>
     </div>
 </div>
+<div class="xasiatze">
+<?php
+
+$sql = "SELECT * FROM xasiatze ORDER BY id DESC";
+$result = mysqli_query($con,$sql);
+if(mysqli_num_rows($result)){
+    $row = mysqli_fetch_assoc($result);
+    echo 'ადმინი დღეს არის: <b>'.$row['xasiati'].'</b> ხასიათზე';
+}
+
+?>
+</div>
 </body>
 </html>

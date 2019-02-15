@@ -28,5 +28,24 @@ if(isset($_GET['logout'])){
         </div>
     </div>
 </div>
+<div class="siaxle">
+    <form method="post" action="adminpanel.php">
+        <input type="text" name="xasiati" placeholder="როგორ ხასიათზე ხართ?">
+        <br>
+        <button name="gamoqveyneba">გამოქვეყნება</button>
+        <br>
+        <button name="siaxliswashla">წაშლა</button>
+        <div class="gamoqveynebulia">
+        <?php
+            $sql = "SELECT COUNT(id) AS list FROM xasiatze";
+            $result = mysqli_query($con,$sql);
+            if(mysqli_num_rows($result)){
+                $row = mysqli_fetch_assoc($result);
+                echo 'გამოქვეყნებულია: ( '.$row['list'].' )';
+            }
+        ?>
+        </div>
+    </form>
+</div>
 </body>
 </html>

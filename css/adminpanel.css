@@ -51,3 +51,35 @@
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+.siaxle{
+    text-align: center;
+    margin-top: 10%;
+}
+
+.siaxle input{
+    width: 30%;
+    height: 80px;
+    padding-left: 10px;
+    font-size: 20px;
+    font-family: 'BPG Arial';
+}
+
+.siaxle button{
+    width: 30%;
+    height: 60px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    margin-top: 10px;
+    color: white;
+    background-color: orangered;
+    font-family: 'BPG Arial';
+}
+
+.gamoqveynebulia{
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: 'BPG Arial';
+}

@@ -99,8 +99,26 @@ if(isset($_POST['login'])){
     }
 }
 
+if(isset($_POST['gamoqveyneba'])){
+    $xasiati = mysqli_real_escape_string($con,$_POST['xasiati']);
+
+    if(empty($xasiati)){
+        array_push($errors,'');
+    }
+
+    if(count($errors) == 0 ){
+        $sql = "INSERT INTO xasiatze (xasiati) VALUES ('$xasiati')";
+        mysqli_query($con,$sql);
+    }
+}
+
 if(isset($_POST['shemosvlebiwashla'])){
     $sql = "DELETE FROM shesvla";
+    mysqli_query($con,$sql);
+}
+
+if(isset($_POST['siaxliswashla'])){
+    $sql = "DELETE FROM xasiatze";
     mysqli_query($con,$sql);
 }
 ?>
