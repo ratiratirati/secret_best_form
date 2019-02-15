@@ -1,0 +1,61 @@
+body{
+    background-image: url("../img/wallpaper.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.form_box{
+    padding-top: 4%;
+    margin: auto;
+    width: 800px;
+    height: 555px;
+    background-color: rgba(0,0,0,0.6);
+    text-align: center;
+    margin-top: 10%;
+
+}
+
+.form_box input{
+    width: 70%;
+    height: 80px;
+    margin-top: 10px;
+    padding-left: 10px;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    font-family: 'BPG Algeti';
+}
+
+
+.form_box button{
+    width: 70%;
+    height: 60px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    margin-top: 5px;
+    background-color: #273c75;
+    font-family: 'BPG Algeti';
+    margin-right: 5px;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+
+.form_box button:hover{
+    transition: 0.5s;
+    background-color: #40739e;
+}
+.form_box button:focus{
+    transition: 0.5s;
+    box-shadow: 0px 0px 10px 2px black;
+}
+
+
+.error{
+    color: red;
+    margin-top: 20px;
+    font-size: 19px;
+    font-family: 'BPG Algeti';
+}
